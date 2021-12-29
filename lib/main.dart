@@ -42,7 +42,13 @@ class _MyhomepageState extends State<Myhomepage> {
             IconButton(onPressed: (){}, icon:const Icon(Icons.search))
           ],
         ),
-        body:clist(name: 'Ajith',status: "offline",image: "lib/asset/valimai.jpg",),
+        body:Column(
+            children: [
+            clist(name: 'Ajith',status: "offline",image: "lib/asset/valimai.jpg",),
+            clist(name: "Vijay", status: "online", image: "lib/asset/beast.jpg"),
+
+          ],
+        ),
         drawer: Navbar()
 
     );

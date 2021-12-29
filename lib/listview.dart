@@ -19,11 +19,15 @@ class _clistState extends State<clist> {
   Widget build(BuildContext context) {
 
 
-    return ListView(
+    return  SizedBox(
+      height: 90.0,
+      child:
+    ListView(
       padding: EdgeInsets.all(3.0),
       children:  [
         ListTile(
-            leading:CircleAvatar(backgroundImage: AssetImage(widget.image),),
+            leading:
+            CircleAvatar(backgroundImage: AssetImage(widget.image),),
             title: Text(widget.name,style: TextStyle(fontWeight: FontWeight.bold),),
             subtitle:Text("Call me as AK ") ,
             trailing: Column(
@@ -43,7 +47,9 @@ class _clistState extends State<clist> {
           thickness: 0.5,
         ),
       ],
+    ),
     );
+
   }
 }
 
